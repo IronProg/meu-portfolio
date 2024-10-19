@@ -1,0 +1,9 @@
+.logo-container {
+  @apply w-[100px] h-[44px] float-left flex justify-center;
+  margin: 10px 0px;
+}
+
+.logo-container img {
+  height: 100%;
+  border-radius: 50%;
+}

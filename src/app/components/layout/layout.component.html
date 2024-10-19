@@ -1,0 +1,24 @@
+<nz-layout class="layout">
+  <nz-header>
+    <div class="logo-container">
+      <a routerLink="/">
+        <img class="logo" [src]="layoutImgUrl" alt="Foto de Iron Berny">
+      </a>
+    </div>
+    <ul nz-menu nzTheme="dark" nzMode="horizontal">
+      <li nz-menu-item [nzSelected]="activeRoute == '/projetos'" >
+        <a routerLink="/projetos">Projetos</a>
+      </li>
+      <li nz-menu-item [nzSelected]="activeRoute == '/sobre'">
+        <a routerLink="/sobre">Sobre</a>
+      </li>
+      <li nz-menu-item [nzSelected]="activeRoute == '/contato'">
+        <a routerLink="/contato">Contate-me</a>
+      </li>
+    </ul>
+  </nz-header>
+  <nz-content>
+    <div class="inner-content">Content</div>
+    <ng-content></ng-content>
+  </nz-content>
+</nz-layout>
